@@ -15,8 +15,8 @@ function SlideShow(n) {
   let i;
   let slides = document.getElementsByClassName("containers");
   let circles = document.getElementsByClassName("dots");
-  if (n > slides.length) {slidePosition = 1}
-  if (n < 1) {slidePosition = slides.length}
+  if (n > slides.length) {slidePosition = 1};
+  if (n < 1) {slidePosition = slides.length};
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
