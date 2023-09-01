@@ -105,14 +105,18 @@ td {
 	background-color: #847E89;
 	color: #56494C;
 }
-.cat-center {
+.cat-center, .message {
 	text-align: center;
 	background-color: #9FA4A9;
 	padding: 1%;
 	color: #56494C;
 }
-.cat-center img {
+.cat-center img, .message form textarea {
 	width: 60%;
+}
+.submit {
+	border-radius: 5px;
+	width: 100px;
 }
 
 footer {
