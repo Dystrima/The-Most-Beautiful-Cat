@@ -38,6 +38,7 @@ nav a:hover {
 	padding: 1rem;
 	text-align: center;
 	color: #C2D3CD;
+	font-size: 1rem;
 }
 h1 {
 	text-align: center;
@@ -45,9 +46,8 @@ h1 {
 }
 
 .carousel {
-	width: 100%;
 	position: relative;
-	margin: auto;
+	/* margin: auto; */
 }
 .containers {
 	display: none;
@@ -88,26 +88,41 @@ h1 {
 }
 
 .cat-left img, .cat-right img {
-	max-width: 50%;
+	max-width: 40%;
+	border-radius: 2rem;
+}
+.cat-right, .cat-left {
+	padding: 1.5rem 5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .cat-right {
-	display: flex;
+	text-align: left;
 	background-color: #9FA4A9;
 	color: #56494C;
 }
 .cat-left {
-	display: flex;
 	text-align: right;
 	background-color: #847E89;
 	color: #56494C;
 }
+main div {
+	padding: inherit;
+	font-size: 1rem;
+}
 .cat-center, .message {
+	padding: 1.5rem 5rem;
 	text-align: center;
 	background-color: #9FA4A9;
-	padding: 1%;
 	color: #56494C;
 }
-.cat-center img, .message form textarea {
+.cat-center img {
+	max-width: 60%;
+	border-radius: 2rem;
+}
+.message form textarea {
 	width: 60%;
 }
 .submit {
@@ -117,8 +132,10 @@ h1 {
 
 footer {
 	background-color: #56494C;
-	padding: 2%;
+	padding: 1rem;
 	color: #9FA4A9;
+	display: flex;
+	justify-content: space-between;
 }
 footer .description {
 	width: 60%;
@@ -126,12 +143,10 @@ footer .description {
 }
 footer .copyrights {
 	text-align: right;
+	align-self: flex-end;
 }
 footer p {
-	font-size: 12px;
-	margin-top: 5px;
-	padding-left: 5px;
-}
-footer h4 {
-	margin-bottom: 0;
+	font-size: 0.7rem;
+	margin-top: 0.3rem;
+	padding-left: 0.3rem;
 }
