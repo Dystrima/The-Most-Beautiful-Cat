@@ -1,3 +1,11 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: Helvetica;
     background-color: #56494C;
@@ -7,18 +15,14 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	margin: 0;
 }
 nav ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 1%;
+	padding: 0.5rem;
 	background-color: #56494C;
 	text-align: center;
-}
-nav li {
-	display: inline;
-	float: center;
+	display: flex;
+	justify-content: space-around;
 }
 nav li a {
 	padding: 3%;
@@ -31,15 +35,15 @@ nav a:hover {
 
 .cat-intro {
 	background-color: #56494C;
-	padding: 1px 0 20px 0;
-	margin-top: 3%;
+	padding: 1rem;
 	text-align: center;
 	color: #C2D3CD;
 }
 h1 {
 	text-align: center;
+	padding: 2rem;
 }
-* {box-sizing:border-box}
+
 .carousel {
 	width: 100%;
 	position: relative;
@@ -83,24 +87,16 @@ h1 {
 	background-color: #C2D3CD;
 }
 
-table {
-	border-collapse: collapse;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-table img {
-	width: 100%;
-}
-td {
-	width: 50%;
-	padding: 1%;
+.cat-left img, .cat-right img {
+	max-width: 50%;
 }
 .cat-right {
+	display: flex;
 	background-color: #9FA4A9;
 	color: #56494C;
 }
 .cat-left {
+	display: flex;
 	text-align: right;
 	background-color: #847E89;
 	color: #56494C;
