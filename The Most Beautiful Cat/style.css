@@ -89,7 +89,7 @@ h1 {
 
 .cat-left img, .cat-right img {
 	max-width: 40%;
-	border-radius: 2rem;
+	/* border-radius: 2rem; */
 }
 .cat-right, .cat-left {
 	padding: 1.5rem 5rem;
@@ -120,7 +120,7 @@ main div {
 }
 .cat-center img {
 	max-width: 60%;
-	border-radius: 2rem;
+	/* border-radius: 2rem; */
 }
 .message form textarea {
 	width: 60%;
