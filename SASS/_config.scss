@@ -1,8 +1,11 @@
 /* COLOR VARIABLES */
-$main-color: #333;
-$second-color: #FEFEFE;
+$background: #333;
+$main-color: #FEFEFE;
+$second-color: red;
+$highlight: blue;
 
 /* FONTS VARIABLES */
+$main-font: sans-serif;
 
 /* RESET */
 * {
@@ -25,8 +28,11 @@ ul {
     list-style: none
 }
 
+li {display: inline-block;}
+
 /* BODY */
 body {
-    background-color: $main-color;
-    color: $second-color;
+    background-color: $background;
+    color: $main-color;
+    font-family: $main-font;
 }

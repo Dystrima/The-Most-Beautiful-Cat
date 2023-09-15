@@ -1,0 +1,18 @@
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .description {
+        padding: 20px;
+    }
+
+    .line {
+        height: 1px;
+        background-color: $main-color;
+    }
+
+    .copyrights {
+        padding: 20px;
+        text-align: right;
+    }
+}

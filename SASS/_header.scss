@@ -1,0 +1,13 @@
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+
+    ul {
+        display: flex;
+        gap: 30px;
+    }
+}

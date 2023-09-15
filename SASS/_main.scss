@@ -1,0 +1,44 @@
+.pasmain {
+    .hero {
+        background-image: url(/Kuro/Carousel1.jpg);
+        background-size: cover;
+        text-align: center;
+        color: $highlight;
+        font-size: 3rem;
+        height: 30rem;
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /* .hero {
+        background-image: url(/Kuro/Carousel1.jpg);
+        background-size: cover;
+        text-align: center;
+        color: $highlight;
+        font-size: 3rem;
+        height: 20rem;
+    } */
+
+    .cat-right, .cat-left {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        img {max-width: 600px;}
+    }
+
+    .cat-center {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        img {max-width: 80%;}
+    }
+}
