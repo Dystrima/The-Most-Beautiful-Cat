@@ -1,0 +1,32 @@
+/* COLOR VARIABLES */
+$main-color: #333;
+$second-color: #FEFEFE;
+
+/* FONTS VARIABLES */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none
+}
+
+/* BODY */
+body {
+    background-color: $main-color;
+    color: $second-color;
+}

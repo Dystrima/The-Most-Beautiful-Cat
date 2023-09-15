@@ -1,152 +1,28 @@
-
-
+/* COLOR VARIABLES */
+/* FONTS VARIABLES */
+/* RESET */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* BODY */
 body {
-	font-family: Helvetica;
-    background-color: #56494C;
-}
-
-nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-nav ul {
-	list-style-type: none;
-	padding: 0.5rem;
-	background-color: #56494C;
-	text-align: center;
-	display: flex;
-	justify-content: space-around;
-}
-nav li a {
-	padding: 3%;
-	color: #C2D3CD;
-	text-decoration: none;
-}
-nav a:hover {
-	text-decoration: underline;
-}
-
-.cat-intro {
-	background-color: #56494C;
-	padding: 1rem;
-	text-align: center;
-	color: #C2D3CD;
-	font-size: 1rem;
-}
-h1 {
-	text-align: center;
-	padding: 2rem;
-}
-
-.carousel {
-	position: relative;
-	/* margin: auto; */
-}
-.containers {
-	display: none;
-}
-.back, .forward {
-	cursor: pointer;
-	position: absolute;
-	bottom: 35%;
-	width: auto;
-	padding: 1%;
-	color: #9FA4A9;
-	font-weight: bold;
-	font-size: 40px;
-	transition: 0.6 ease;
-	user-select: none;
-}
-.forward {
-	right: 0;
-}
-.back {
-	left: 0;
-}
-.back:hover, .forward:hover {
-	color: #C2D3CD;
-}
-.dots {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 3px;
-	background-color: #9FA4A9;
-	border-radius: 50%;
-	display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.enable, .dots:hover {
-	background-color: #C2D3CD;
-}
-
-.cat-left img, .cat-right img {
-	max-width: 40%;
-	/* border-radius: 2rem; */
-}
-.cat-right, .cat-left {
-	padding: 1.5rem 5rem;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-}
-.cat-right {
-	text-align: left;
-	background-color: #9FA4A9;
-	color: #56494C;
-}
-.cat-left {
-	text-align: right;
-	background-color: #847E89;
-	color: #56494C;
-}
-main div {
-	padding: inherit;
-	font-size: 1rem;
-}
-.cat-center, .message {
-	padding: 1.5rem 5rem;
-	text-align: center;
-	background-color: #9FA4A9;
-	color: #56494C;
-}
-.cat-center img {
-	max-width: 60%;
-	/* border-radius: 2rem; */
-}
-.message form textarea {
-	width: 60%;
-}
-.submit {
-	border-radius: 5px;
-	width: 100px;
-}
-
-footer {
-	background-color: #56494C;
-	padding: 1rem;
-	color: #9FA4A9;
-	display: flex;
-	justify-content: space-between;
-}
-footer .description {
-	width: 60%;
-	text-align: left;
-}
-footer .copyrights {
-	text-align: right;
-	align-self: flex-end;
-}
-footer p {
-	font-size: 0.7rem;
-	margin-top: 0.3rem;
-	padding-left: 0.3rem;
+  background-color: #333;
+  color: #FEFEFE;
 }
