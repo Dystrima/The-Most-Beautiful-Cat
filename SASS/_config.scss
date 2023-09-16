@@ -1,8 +1,9 @@
 /* COLOR VARIABLES */
-$background: #333;
-$main-color: #FEFEFE;
-$second-color: red;
-$highlight: blue;
+$first-color: #C2D3CD;
+$second-color: #AFBFC0;
+$third-color: #9FA4A9;
+$fourth-color: #847E89;
+$fifth-color: #56494C;
 
 /* FONTS VARIABLES */
 $main-font: sans-serif;
@@ -32,7 +33,7 @@ li {display: inline-block;}
 
 /* BODY */
 body {
-    background-color: $background;
-    color: $main-color;
+    background-color: $fifth-color;
+    color: $first-color;
     font-family: $main-font;
 }
