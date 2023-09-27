@@ -19,17 +19,34 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="pasmain">
+	<!-- <div class="pasmain">
 		<section class="hero">
 			<h1>The Most Beautiful Cat</h1>
-			<!-- <img src="Kuro/Kuro1.jpg" alt="Kuro"> -->
 		</section>
-	</div>
+	</div> -->
+	<section class="cat-intro">
+		<h1>The Most Beautiful Cat</h1>
+		<div class="carousel" aria-label="Beautiful images of the most beautiful cat">
+			<div class="containers">
+				<img src="Kuro/Carousel1.jpg" alt="" style="width: 90%">
+			</div>
+			<div class="containers">
+				<img src="Kuro/Carousel2.jpg" alt="" style="width: 90%">
+			</div>
+			<div class="containers">
+				<img src="Kuro/Carousel3.jpg" alt="" style="width: 90%">
+			</div>
+			<a class="back" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="forward" onclick="plusSlides(1)">&#10095;</a>
+		</div><br>
+		<div style="text-align: center">
+			<span class="dots" onclick="currentSlide(1)"></span>
+			<span class="dots" onclick="currentSlide(2)"></span>
+			<span class="dots" onclick="currentSlide(3)"></span>
+		</div>
+	</section>
+
 	<main>
-		
-		<!-- <section class="hero">
-			<h1>The Most Beautiful Cat</h1>
-		</section> -->
 
 		<section class="cat-right">
 			<img src="Kuro/Carré3.jpg" alt="Kuro">
@@ -68,5 +85,6 @@
 		<div class="line"></div>
 		<p class="copyrights">Elodie Duval | Ⓒ 2023 Kuro: The Most Beautiful Cat</p>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
