@@ -1,3 +1,9 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: Helvetica;
     background-color: #56494C;
@@ -39,7 +45,7 @@ nav a:hover {
 h1 {
 	text-align: center;
 }
-* {box-sizing:border-box}
+
 .carousel {
 	width: 100%;
 	position: relative;
