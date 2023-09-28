@@ -1,0 +1,45 @@
+/* COLOR VARIABLES */
+$first-color: #C2D3CD;
+$second-color: #AFBFC0;
+$third-color: #9FA4A9;
+$fourth-color: #847E89;
+$fifth-color: #56494C;
+
+/* FONTS VARIABLES */
+$main-font: sans-serif;
+
+/* BREAKPOINTS */
+$breakpoint-mobile: 481px;
+$breakpoint-tablet: 768px;
+$breakpoint-smallscreen: 1024px;
+$breakpoint-desktop: 1440px;
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none
+}
+
+li {display: inline-block;}
+
+/* BODY */
+body {
+    background-color: $fifth-color;
+    color: $first-color;
+    font-family: $main-font;
+}
