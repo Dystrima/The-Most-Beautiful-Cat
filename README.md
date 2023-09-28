@@ -3,7 +3,7 @@
  ![Kuro](https://dc718.4shared.com/img/X5mQh6rAge/s24/189e0d46820/Carousel_1?async&rand=0.0962493404563245)
 
  ### Why ❓
- I did this website as a training 👩‍💻 before the selections for a junior dev course. 
+ I started this website as a training 👩‍💻 before the selections for a junior dev course. 
 
 ### What's in it ? 📦
 The website is made of 4 pages:

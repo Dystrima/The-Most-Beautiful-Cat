@@ -5,31 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Most Beautiful Cat</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-	<header>
-		<div class="logo">MyLogo</div>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="maxheader">
+		<header>
+			<div class="logo"><a href="index.html">MyLogo</a></div>
+			<input type="checkbox" id="toggle">
+			<label for="toggle" class="burger">
+				<div class="slice"></div>
+				<div class="slice"></div>
+				<div class="slice"></div>
+			</label>
+			<nav>
+				<ul>
+					<li><a href="index.html">🏠 Home</a></li>
+					<li><a href="portfolio.html">📷 Portfolio</a></li>
+					<li><a href="about.html">👤 About</a></li>
+					<li><a href="contact.html">✉️ Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	
+
 	<section class="cat-intro">
 		<h1>The Most Beautiful Cat</h1>
 		<div class="carousel" aria-label="Beautiful images of the most beautiful cat">
 			<div class="containers">
-				<img src="Kuro/Carousel1.jpg" alt="" style="width: 90%">
+				<img src="Kuro/Carousel1.jpg" alt="Kuro">
 			</div>
 			<div class="containers">
-				<img src="Kuro/Carousel2.jpg" alt="" style="width: 90%">
+				<img src="Kuro/Carousel2.jpg" alt="Kuro">
 			</div>
 			<div class="containers">
-				<img src="Kuro/Carousel3.jpg" alt="" style="width: 90%">
+				<img src="Kuro/Carousel3.jpg" alt="Kuro">
 			</div>
 			<a class="back" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="forward" onclick="plusSlides(1)">&#10095;</a>
@@ -61,7 +70,7 @@
 				<section class="cat-left">
 					<div>
 						<h2>Pictures of Kuro</h2>
-						<p>There are a lot of picture of Kuro, the most beautiful cat, here.<br>
+						<p>There are a lot of pictures of Kuro, the most beautiful cat, here.<br>
 							Don’t hesitate to post a comment and leave a like!</p>
 					</div>
 					<img src="Kuro/Carré2.jpg" alt="Kuro">

@@ -8,6 +8,12 @@ $fifth-color: #56494C;
 /* FONTS VARIABLES */
 $main-font: sans-serif;
 
+/* BREAKPOINTS */
+$breakpoint-mobile: 481px;
+$breakpoint-tablet: 768px;
+$breakpoint-smallscreen: 1024px;
+$breakpoint-desktop: 1440px;
+
 /* RESET */
 * {
     margin: 0;

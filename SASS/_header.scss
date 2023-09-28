@@ -1,3 +1,13 @@
+.maxheader {
+    position: fixed;
+    top: 0;
+    background-color: $fifth-color;
+    width: 100%;
+    z-index: 10;
+}
+
+// 66
+
 header {
     max-width: 1200px;
     margin: 0 auto;
@@ -6,8 +16,59 @@ header {
     padding: 20px;
 
 
-    ul {
+    nav {
+        position: absolute;
+        right: -100vh;
+        transition: right 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        @media (min-width: $breakpoint-tablet) {
+            display: initial;
+            position: static;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            @media (min-width: $breakpoint-tablet) {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+
+    #toggle:checked~nav {
+        right: 0;
+        top: 0;
+        background-color: $fourth-color;
+        padding: 100px 50px 50px;
+        text-align: right;
+        width: 70vw;
+        height: 100vh;
+    }
+    
+    #toggle {
+        display: none;
+    }
+    
+    label {
+        position: relative;
+        z-index: 99;
+        cursor: pointer;
+    }
+    
+    .burger {
         display: flex;
-        gap: 30px;
+        flex-direction: column;
+        gap: 10px;
+    
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        }
+
+        .slice {
+            background-color: $first-color;
+            width: 40px;
+            height: 2px;
+        }
     }
 }
