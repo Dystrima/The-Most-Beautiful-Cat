@@ -48,6 +48,10 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
+header .logo svg {
+  fill: #C2D3CD;
+  width: 30px;
+}
 header nav {
   position: absolute;
   right: -100vh;
@@ -69,6 +73,22 @@ header nav ul {
     flex-direction: row;
     align-items: center;
   }
+}
+header nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+header nav ul li a svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #C2D3CD;
+}
+header nav ul li a svg .st0 {
+  fill: #56494C;
+}
+header nav ul li a svg .st99 {
+  fill: #C2D3CD;
 }
 header #toggle:checked ~ nav {
   right: 0;

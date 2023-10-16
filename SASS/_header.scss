@@ -6,8 +6,6 @@
     z-index: 10;
 }
 
-// 66
-
 header {
     max-width: 1200px;
     margin: 0 auto;
@@ -15,6 +13,10 @@ header {
     justify-content: space-between;
     padding: 20px;
 
+    .logo svg {
+        fill: $first-color;
+        width: 30px;
+    }
 
     nav {
         position: absolute;
@@ -32,6 +34,24 @@ header {
             @media (min-width: $breakpoint-tablet) {
                 flex-direction: row;
                 align-items: center;
+            }
+
+            li a {
+                display: flex;
+                align-items: center;
+                gap: 3px;
+                svg {
+                    width: 1rem;
+                    height: 1rem;
+                    fill: $first-color;
+
+                    .st0 {
+                        fill: $fifth-color;
+                    }
+                    .st99 {
+                        fill: $first-color;
+                    }
+                }
             }
         }
     }
