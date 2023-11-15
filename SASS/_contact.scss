@@ -1,0 +1,94 @@
+.contact-intro {
+    padding: 2rem 0;
+}
+
+.message {
+    display: flex;
+    padding: 2rem 0;
+    background-color: $second-color;
+    color: $fifth-color;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1.5rem;
+        form {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 1rem;
+            }
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 0.3rem;
+            }
+            textarea {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 10px;
+                font-family: inherit;
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+            .submit {
+                background-color: $fifth-color;
+                border: none;
+                width: fit-content;
+                padding: 5px 10px;
+                margin-bottom: 0;
+                align-self: flex-end;
+                font-family: inherit;
+                color: $first-color;
+            }
+        }
+    }
+}
+
+.your-messages {
+    padding: 2rem 0;
+    background-color: $third-color;
+    color: $fifth-color;
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .swiper {
+        width: 100%;
+        height: 300px;
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            height: 80%;
+            .swiper-slide {
+                border: 2px solid $fifth-color;
+                padding: 1rem;
+                background-color: $first-color;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .subject{
+                    font-weight: bold;
+                }
+                .message{
+                    background-color: $first-color;
+                }
+                .name{
+                    font-style: italic;
+                    text-align: right;
+                }
+            }
+        }
+        .swiper-button-prev, .swiper-button-next {
+            color: $fifth-color;
+        }
+        .swiper-button-prev:hover, .swiper-button-next:hover {
+            color: $first-color;
+        }
+        .swiper-pagination-bullet {
+            background-color: $fifth-color;
+        }
+    }
+}

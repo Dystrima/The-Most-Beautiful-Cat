@@ -1,6 +1,6 @@
 .cat-intro {
     margin-top: 66px;
-    padding: 1rem 0;
+    // padding: 1rem 0;
     text-align: center;
     font-size: 1rem;
     
@@ -50,8 +50,6 @@ main {
     }
 
     .container {
-        max-width: 1200px;
-        margin: 0 auto;
 
         .cat-right, .cat-left {
             display: grid;

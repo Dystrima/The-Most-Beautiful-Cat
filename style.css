@@ -33,6 +33,11 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .maxheader {
   position: fixed;
   top: 0;
@@ -46,6 +51,7 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 header .logo svg {
@@ -123,9 +129,103 @@ header .burger .slice {
   height: 2px;
 }
 
+.contact-intro {
+  padding: 2rem 0;
+}
+
+.message {
+  display: flex;
+  padding: 2rem 0;
+  background-color: #AFBFC0;
+  color: #56494C;
+}
+.message .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1.5rem;
+}
+.message .container form {
+  display: flex;
+  flex-direction: column;
+}
+.message .container form label {
+  font-size: 1rem;
+}
+.message .container form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0.3rem;
+}
+.message .container form textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.message .container form .submit {
+  background-color: #56494C;
+  border: none;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  align-self: flex-end;
+  font-family: inherit;
+  color: #C2D3CD;
+}
+
+.your-messages {
+  padding: 2rem 0;
+  background-color: #9FA4A9;
+  color: #56494C;
+}
+.your-messages h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.your-messages .swiper {
+  width: 100%;
+  height: 300px;
+}
+.your-messages .swiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 80%;
+}
+.your-messages .swiper .swiper-wrapper .swiper-slide {
+  border: 2px solid #56494C;
+  padding: 1rem;
+  background-color: #C2D3CD;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.your-messages .swiper .swiper-wrapper .swiper-slide .subject {
+  font-weight: bold;
+}
+.your-messages .swiper .swiper-wrapper .swiper-slide .message {
+  background-color: #C2D3CD;
+}
+.your-messages .swiper .swiper-wrapper .swiper-slide .name {
+  font-style: italic;
+  text-align: right;
+}
+.your-messages .swiper .swiper-button-prev, .your-messages .swiper .swiper-button-next {
+  color: #56494C;
+}
+.your-messages .swiper .swiper-button-prev:hover, .your-messages .swiper .swiper-button-next:hover {
+  color: #C2D3CD;
+}
+.your-messages .swiper .swiper-pagination-bullet {
+  background-color: #56494C;
+}
+
 .cat-intro {
   margin-top: 66px;
-  padding: 1rem 0;
   text-align: center;
   font-size: 1rem;
 }
@@ -163,10 +263,6 @@ main .third-section {
 main .second-section {
   background-color: #9FA4A9;
   color: #56494C;
-}
-main .container {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 main .container .cat-right, main .container .cat-left {
   display: grid;
