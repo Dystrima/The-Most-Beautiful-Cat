@@ -15,4 +15,4 @@ The website is made of 4 pages:
 ### Progression 🎯
 It's still a WIP, the home page (*index.html*) is **done**, I've got the structuration and content of all the other pages in Figma, but I still need to put everything in HTML files, and then add some CSS, probably some JS, and maybe think about the data base of the comments and likes on the porfolio and the messages on the contact page...  
 
-If you want to check it out, click ➡️ [here](https://dystrima.github.io/The-Most-Beautiful-Cat/) ⬅️
+If you want to check it out, click ➡️ [here](https://the-most-beautiful-cat.vercel.app/) ⬅️
