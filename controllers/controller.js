@@ -11,8 +11,9 @@ module.exports = {
 		res.render("about");
 	},
 	getContact: async (req, res) => {
-		const messages = await Message.find();
-		res.render("contact", { messages });
+		// const messages = await Message.find();
+		// res.render("contact", { messages });
+		res.render("contact");
 	},
 	postContact: async (req, res) => {
 		const { name, subject, message } = req.body;
