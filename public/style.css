@@ -26,10 +26,6 @@ li {
   display: inline-block;
 }
 
-button {
-  cursor: pointer;
-}
-
 /* BODY */
 body {
   background-color: #56494C;

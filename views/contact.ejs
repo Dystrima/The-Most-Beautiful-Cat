@@ -1,0 +1,77 @@
+<%- include('partials/header') %>
+
+  <main>
+    <section class="cat-intro contact-intro">
+      <div class="container">
+        <h1>Contact Kuro</h1>
+        <p>Share your love by leaving a message to Kuro, the most beautiful cat.<br>
+          You can even put a picture of your own cat if you want them to be acknowledged by Kuro, the most beautiful cat.</p>
+      </div>
+    </section>
+    <section class="message">
+      <div class="container">
+        <!--Picture of Kuro-->
+        <img src="Kuro/Rectangle3.jpg">
+        <!--Form-->
+        <form method="POST">
+          <!--Name-->
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text">
+          <!--Subject-->
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text">
+          <!--Message-->
+          <label>Message of love</label>
+          <textarea name="message" maxlength="450"></textarea>
+          <!--Add a picture-->
+          <!--Send button-->
+          <button class="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    
+    <section class="your-messages">
+      <div class="container">
+        <!--Title of the section-->
+        <!--Swiper with users messages-->
+        <h2>What users wrote</h2>
+        <div class="swiper swiper-messages">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="subject">Le sujet du Message</div>
+              <div class="message">Le message Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis quia, sequi porro numquam officia ullam nobis voluptatum tenetur accusantium, nulla labore necessitatibus, reiciendis est consequatur voluptates quod cum mollitia.</div>
+              <div class="name">Le nom de la personne qui a écrit le message</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="subject">Le sujet 2</div>
+              <div class="message">Le message 2</div>
+              <div class="name">Le nom 2</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="subject">Le sujet 3</div>
+              <div class="message">Le message 3</div>
+              <div class="name">Le nom 3</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="subject">Le sujet 4</div>
+              <div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis quia, sequi porro numquam officia ullam nobis
+              voluptatum tenetur accusantium, nulla labore necessitatibus, reiciendis est consequatur voluptates quod cum mollitia.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis quia, sequi porro numquam officia ullam nobis
+              voluptatum tenetur accusantium, nulla labore necessitatibus, reiciendis est consequatur voluptat</div>
+              <div class="name">Le nom 4</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <%- include('partials/footer') %>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script src="script.js"></script>
+
+</body>
+</html>

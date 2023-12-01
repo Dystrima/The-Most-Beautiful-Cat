@@ -1,0 +1,18 @@
+{
+  "name": "the-most-beautiful-cat",
+  "version": "1.0.0",
+  "description": "A website for my beautiful cat, Kuro 🐈, made by me.  \r  ![Kuro](https://dc718.4shared.com/img/X5mQh6rAge/s24/189e0d46820/Carousel_1?async&rand=0.0962493404563245)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.2"
+  }
+}
