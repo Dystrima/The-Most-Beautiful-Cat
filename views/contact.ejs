@@ -10,21 +10,20 @@
     </section>
     <section class="message">
       <div class="container">
-        <!--Picture of Kuro-->
+
         <img src="Kuro/Rectangle3.jpg">
-        <!--Form-->
-        <form method="POST">
-          <!--Name-->
+
+        <form method="post">
+
           <label for="name">Name</label>
-          <input id="name" name="name" type="text">
-          <!--Subject-->
+          <input type="text" id="name" name="name" required>
+
           <label for="subject">Subject</label>
-          <input id="subject" name="subject" type="text">
-          <!--Message-->
+          <input type="text" id="subject" name="subject" required>
+
           <label>Message of love</label>
-          <textarea name="message" maxlength="450"></textarea>
-          <!--Add a picture-->
-          <!--Send button-->
+          <textarea id="message" name="message" maxlength="450"></textarea>
+
           <button class="submit">Send</button>
         </form>
       </div>
@@ -37,29 +36,15 @@
         <h2>What users wrote</h2>
         <div class="swiper swiper-messages">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="subject">Le sujet du Message</div>
-              <div class="message">Le message Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis quia, sequi porro numquam officia ullam nobis voluptatum tenetur accusantium, nulla labore necessitatibus, reiciendis est consequatur voluptates quod cum mollitia.</div>
-              <div class="name">Le nom de la personne qui a écrit le message</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="subject">Le sujet 2</div>
-              <div class="message">Le message 2</div>
-              <div class="name">Le nom 2</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="subject">Le sujet 3</div>
-              <div class="message">Le message 3</div>
-              <div class="name">Le nom 3</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="subject">Le sujet 4</div>
-              <div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis quia, sequi porro numquam officia ullam nobis
-              voluptatum tenetur accusantium, nulla labore necessitatibus, reiciendis est consequatur voluptates quod cum mollitia.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis quia, sequi porro numquam officia ullam nobis
-              voluptatum tenetur accusantium, nulla labore necessitatibus, reiciendis est consequatur voluptat</div>
-              <div class="name">Le nom 4</div>
-            </div>
+
+            <% messages.forEach(message => { %>
+              <div class="swiper-slide">
+                <div class="subject"> <%= message.subject %> </div>
+                <div class="message"> <%= message.message %> </div>
+                <div class="name"> <%= message.name %> </div>
+              </div>
+            <% }) %>
+
           </div>
           <div class="swiper-pagination"></div>
         </div>

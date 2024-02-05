@@ -26,6 +26,10 @@ li {
   display: inline-block;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* BODY */
 body {
   background-color: #56494C;
@@ -174,6 +178,9 @@ header .burger .slice {
   align-self: flex-end;
   font-family: inherit;
   color: #C2D3CD;
+}
+.message .container form .submit:hover {
+  background-color: #847E89;
 }
 
 .your-messages {
