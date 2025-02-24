@@ -179,6 +179,9 @@ header .burger .slice {
   font-family: inherit;
   color: #C2D3CD;
 }
+.message .container form .submit:hover {
+  background-color: #847E89;
+}
 
 .your-messages {
   padding: 2rem 0;

@@ -1,0 +1,62 @@
+<%- include('partials/header') %>
+
+  <main>
+    <section class="cat-intro contact-intro">
+      <div class="container">
+        <h1>Contact Kuro</h1>
+        <p>Share your love by leaving a message to Kuro, the most beautiful cat.<br>
+          You can even put a picture of your own cat if you want them to be acknowledged by Kuro, the most beautiful cat.</p>
+      </div>
+    </section>
+    <section class="message">
+      <div class="container">
+
+        <img src="Kuro/Rectangle3.jpg">
+
+        <form method="post">
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+
+          <label>Message of love</label>
+          <textarea id="message" name="message" maxlength="450"></textarea>
+
+          <button class="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    
+    <section class="your-messages">
+      <div class="container">
+        <!--Title of the section-->
+        <!--Swiper with users messages-->
+        <h2>What users wrote</h2>
+        <div class="swiper swiper-messages">
+          <div class="swiper-wrapper">
+
+            <% messages.forEach(message => { %>
+              <div class="swiper-slide">
+                <div class="subject"> <%= message.subject %> </div>
+                <div class="message"> <%= message.message %> </div>
+                <div class="name"> <%= message.name %> </div>
+              </div>
+            <% }) %>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <%- include('partials/footer') %>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script src="script.js"></script>
+
+</body>
+</html>

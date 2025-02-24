@@ -40,6 +40,9 @@
                 align-self: flex-end;
                 font-family: inherit;
                 color: $first-color;
+                &:hover {
+                    background-color: $fourth-color;
+                }
             }
         }
     }

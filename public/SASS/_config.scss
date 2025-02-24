@@ -32,10 +32,16 @@ a {
 }
 
 ul {
-    list-style: none
+    list-style: none;
 }
 
-li {display: inline-block;}
+li {
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+}
 
 /* BODY */
 body {
